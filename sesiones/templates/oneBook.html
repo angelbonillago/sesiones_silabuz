@@ -8,4 +8,12 @@
 <li>{{book.isbn}}</li>
 
 </ul>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit">
+</form>
+
+
 {% endblock %}
